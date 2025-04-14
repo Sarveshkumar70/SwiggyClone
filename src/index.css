@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.slider-container {
+  position: relative;
+}
+
+.slick-prev:before {
+  content: "←";
+  border: 1px solid black !important;
+}
+.slick-next:before {
+  content: "→";
+  border: 1px solid black !important;
+}
+
+.slick-prev {
+  background: #000 !important;
+  top: -36px !important;
+  left: auto !important;
+  right: 92px !important;
+  opacity: 0;
+}
+.slick-next {
+  background: #000 !important;
+  top: -36px !important;
+  left: auto !important;
+  right: 50px !important;
+  opacity: 0;
+}
+
+/* fro hiding scrollbar */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+
+  scrollbar-width: none; /* Firefox */
+}
