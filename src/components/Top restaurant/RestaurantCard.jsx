@@ -8,9 +8,9 @@ function RestaurantCard({ item }) {
         className="  flex flex-col justify-center items-center hover:scale-95 mx-auto hover:cursor-pointer  w-[260px] 
       transition delay-105 duration-150 ease-linear ">
         {/* img  */}
-        <div className="relative overflow-hidden w-[220px] h-[150px]  sm:w-[260px]  sm:h-[160px] rounded-[10px]">
+        <div className="relative overflow-hidden w-full h-[150px]  sm:w-[260px]  sm:h-[160px] rounded-[10px]   ">
           <img
-            className="object-cover w-[100%] h-[100%] rounded-[10px]"
+            className="object-cover w-[100%] h-[100%] rounded-[10px]  "
             src={item.imgSrc}
             alt=""
           />

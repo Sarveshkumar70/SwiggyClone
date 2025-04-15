@@ -7,7 +7,8 @@ import FooterContainer from "../components/Footer/FooterContainer";
 function Home() {
   return (
     <>
-      <main className="container mx-auto px-8 xl:px-32 mt-25 ">
+      {/* <main className="container mx-auto px-8 xl:px-32 mt-25 "> */}
+      <main className="container mx-auto w-[90%]  xl:w-[82%] mt-25 ">
         <CarouselContainer />
         <hr className="text-gray-200 mt-15" />
         <RestaurantContainer />
@@ -17,7 +18,6 @@ function Home() {
       <div className=" mx-auto px-8 xl:px-32 bg-gray-100 ">
       <FooterContainer />
       </div>
-
     </>
   );
 }
