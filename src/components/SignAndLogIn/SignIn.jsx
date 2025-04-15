@@ -9,9 +9,9 @@ function SignIn({ offToggle }) {
     document.body.classList.add("overflow-hidden");
 
     const handleClickOutside = (e) => {
-      console.log(e,"this is event");
-      console.log(modalRef.current,"ref value");
-      
+      console.log(e, "this is event");
+      console.log(modalRef.current, "ref value");
+
       // if modal exists & user clicked outside modal then close modal
       if (modalRef.current && !modalRef.current.contains(e.target)) {
         offToggle();
@@ -28,17 +28,19 @@ function SignIn({ offToggle }) {
 
   return (
     <>
+    {/* container page */}
       <div className="border fixed w-[100vw] h-auto top-0   inset-0 bg-black opacity-80 z-30">
         {" "}
       </div>
       {/* actual LogIn page */}
 
+    
       <div
         ref={modalRef}
         className={`  shadow-lg flex flex-col w-[30%] h-[700px]  px-15 py-30   bg-white fixed z-40 right-0 ml-auto
-        top-0 transform transition-transform duration-400 ease-in ` }
-        onBlur={offToggle}
-      >
+        top-0 transform transition-transform duration-400 ease-in `}
+        onBlur={offToggle}>
+
         <RxCross1
           className="text-2xl hover:cursor-pointer"
           onClick={offToggle}
@@ -64,7 +66,7 @@ function SignIn({ offToggle }) {
         </div>
 
         {/* lower box */}
-        <div className="flex flex-col gap-2 mt-4">
+        <div className="flex flex-col gap-5 mt-4  ">
           <input
             type="number"
             placeholder="Phone number"
@@ -75,7 +77,7 @@ function SignIn({ offToggle }) {
             <button className="bg-orange-600 text-white py-2 hover:cursor-pointer w-[100%] font-medium">
               LOGIN
             </button>
-            <p className="text-[12px] font-medium text-gray-600">
+            <p className="text-[12px] font-medium text-gray-600 pt-1">
               By clicking on Login, I accept the
               <span className="font-bold text-black">
                 {" "}
